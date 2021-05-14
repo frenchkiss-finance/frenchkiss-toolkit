@@ -1,6 +1,6 @@
 import { InputHTMLAttributes } from "react";
 
-export type FrenchkissToggleTheme = {
+export type FrenchKissToggleTheme = {
   handleBackground: string;
   handleShadow: string;
 };
@@ -12,7 +12,7 @@ export const scales = {
 
 export type Scales = typeof scales[keyof typeof scales];
 
-export interface FrenchkissToggleProps extends InputHTMLAttributes<HTMLInputElement> {
+export interface FrenchKissToggleProps extends InputHTMLAttributes<HTMLInputElement> {
   scale?: Scales;
   checked?: boolean;
 }

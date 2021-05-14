@@ -1,12 +1,12 @@
 import { darkColors, lightColors } from "../../theme/colors";
-import { FrenchkissToggleTheme } from "./types";
+import { FrenchKissToggleTheme } from "./types";
 
-export const light: FrenchkissToggleTheme = {
+export const light: FrenchKissToggleTheme = {
   handleBackground: lightColors.backgroundAlt,
   handleShadow: lightColors.textDisabled,
 };
 
-export const dark: FrenchkissToggleTheme = {
+export const dark: FrenchKissToggleTheme = {
   handleBackground: darkColors.backgroundAlt,
   handleShadow: darkColors.textDisabled,
 };

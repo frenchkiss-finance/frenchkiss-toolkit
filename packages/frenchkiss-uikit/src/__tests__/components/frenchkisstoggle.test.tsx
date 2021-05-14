@@ -1,11 +1,11 @@
 import React from "react";
 import { renderWithTheme } from "../../testHelpers";
-import FrenchkissToggle from "../../components/FrenchkissToggle/FrenchkissToggle";
+import FrenchKissToggle from "../../components/FrenchKissToggle/FrenchKissToggle";
 
 const handleChange = jest.fn();
 
 it("renders correctly", () => {
-  const { asFragment } = renderWithTheme(<FrenchkissToggle checked onChange={handleChange} scale="md" />);
+  const { asFragment } = renderWithTheme(<FrenchKissToggle checked onChange={handleChange} scale="md" />);
   expect(asFragment()).toMatchInlineSnapshot(`
     <DocumentFragment>
       .c0 {
@@ -200,7 +200,7 @@ it("renders correctly", () => {
 });
 
 it("renders correctly scale sm", () => {
-  const { asFragment } = renderWithTheme(<FrenchkissToggle checked onChange={handleChange} scale="sm" />);
+  const { asFragment } = renderWithTheme(<FrenchKissToggle checked onChange={handleChange} scale="sm" />);
   expect(asFragment()).toMatchInlineSnapshot(`
     <DocumentFragment>
       .c0 {

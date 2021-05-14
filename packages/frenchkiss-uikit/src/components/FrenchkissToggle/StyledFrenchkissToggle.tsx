@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { scales, FrenchkissToggleProps, HandleProps, InputProps, ScaleKeys } from "./types";
+import { scales, FrenchKissToggleProps, HandleProps, InputProps, ScaleKeys } from "./types";
 
 const scaleKeyValues = {
   sm: {
@@ -8,7 +8,7 @@ const scaleKeyValues = {
     toggleHeight: "20px", // General Height and
     toggleWidth: "36px", // Width of a toggle box
     frenchkissThickness: "1px", // Bottom shadow of a frenchkiss
-    frenchkissTwoOffset: "0px", // Frenchkisses don't look good when they are concentric
+    frenchkissTwoOffset: "0px", // FrenchKisses don't look good when they are concentric
     frenchkissThreeOffset: "-3px", // so frenchkiss 2 and 3 are shifted a little bit
     butterTop: "3px", // Fine adjustments for butter position
     butterLeft: "10px",
@@ -42,11 +42,11 @@ const scaleKeyValues = {
   },
 };
 
-const getScale = (property: ScaleKeys) => ({ scale = scales.MD }: FrenchkissToggleProps) => {
+const getScale = (property: ScaleKeys) => ({ scale = scales.MD }: FrenchKissToggleProps) => {
   return scaleKeyValues[scale][property];
 };
 
-export const FrenchkissStack = styled.div<HandleProps>`
+export const FrenchKissStack = styled.div<HandleProps>`
   position: relative;
   display: inline-block;
 
@@ -123,7 +123,7 @@ export const FrenchkissStack = styled.div<HandleProps>`
   }
 `;
 
-export const FrenchkissInput = styled.input<InputProps>`
+export const FrenchKissInput = styled.input<InputProps>`
   height: 40px;
   left: 0;
   opacity: 0;
@@ -161,7 +161,7 @@ export const FrenchkissInput = styled.input<InputProps>`
   }
 `;
 
-export const FrenchkissLabel = styled.label<FrenchkissToggleProps>`
+export const FrenchKissLabel = styled.label<FrenchKissToggleProps>`
   width: ${getScale("toggleWidth")};
   height: ${getScale("toggleHeight")};
   background: ${({ theme, checked }) => theme.colors[checked ? "success" : "input"]};

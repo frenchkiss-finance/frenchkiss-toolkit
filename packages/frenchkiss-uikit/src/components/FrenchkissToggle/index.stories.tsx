@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import FrenchkissToggle from "./FrenchkissToggle";
+import FrenchKissToggle from "./FrenchKissToggle";
 
 export default {
-  title: "Components/FrenchkissToggle",
-  component: FrenchkissToggle,
+  title: "Components/FrenchKissToggle",
+  component: FrenchKissToggle,
 };
 
 export const Default: React.FC = () => {
@@ -14,10 +14,10 @@ export const Default: React.FC = () => {
   return (
     <>
       <div style={{ marginBottom: "32px" }}>
-        <FrenchkissToggle checked={isChecked} onChange={toggle} />
+        <FrenchKissToggle checked={isChecked} onChange={toggle} />
       </div>
       <div>
-        <FrenchkissToggle checked={isChecked} onChange={toggle} scale="sm" />
+        <FrenchKissToggle checked={isChecked} onChange={toggle} scale="sm" />
       </div>
     </>
   );

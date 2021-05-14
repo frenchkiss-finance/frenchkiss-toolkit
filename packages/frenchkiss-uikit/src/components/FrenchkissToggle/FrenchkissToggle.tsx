@@ -1,23 +1,23 @@
 import React from "react";
-import { FrenchkissStack, FrenchkissInput, FrenchkissLabel } from "./StyledFrenchkissToggle";
-import { FrenchkissToggleProps, scales } from "./types";
+import { FrenchKissStack, FrenchKissInput, FrenchKissLabel } from "./StyledFrenchKissToggle";
+import { FrenchKissToggleProps, scales } from "./types";
 
-const FrenchkissToggle: React.FC<FrenchkissToggleProps> = ({ checked, scale = scales.MD, ...props }) => (
-  <FrenchkissStack scale={scale}>
-    <FrenchkissInput id={props.id || "frenchkiss-toggle"} scale={scale} type="checkbox" checked={checked} {...props} />
-    <FrenchkissLabel scale={scale} checked={checked} htmlFor={props.id || "frenchkiss-toggle"}>
+const FrenchKissToggle: React.FC<FrenchKissToggleProps> = ({ checked, scale = scales.MD, ...props }) => (
+  <FrenchKissStack scale={scale}>
+    <FrenchKissInput id={props.id || "frenchkiss-toggle"} scale={scale} type="checkbox" checked={checked} {...props} />
+    <FrenchKissLabel scale={scale} checked={checked} htmlFor={props.id || "frenchkiss-toggle"}>
       <div className="frenchkisses">
         <div className="frenchkiss" />
         <div className="frenchkiss" />
         <div className="frenchkiss" />
         <div className="butter" />
       </div>
-    </FrenchkissLabel>
-  </FrenchkissStack>
+    </FrenchKissLabel>
+  </FrenchKissStack>
 );
 
-FrenchkissToggle.defaultProps = {
+FrenchKissToggle.defaultProps = {
   scale: scales.MD,
 };
 
-export default FrenchkissToggle;
+export default FrenchKissToggle;

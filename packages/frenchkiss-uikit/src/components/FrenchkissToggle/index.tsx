@@ -1,2 +1,2 @@
-export { default as FrenchkissToggle } from "./FrenchkissToggle";
-export type { FrenchkissToggleProps, Scales as FrenchkissToggleScales } from "./types";
+export { default as FrenchKissToggle } from "./FrenchKissToggle";
+export type { FrenchKissToggleProps, Scales as FrenchKissToggleScales } from "./types";
