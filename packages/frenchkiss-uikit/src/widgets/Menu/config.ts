@@ -145,62 +145,18 @@ export const socials = [
     items: [
       {
         label: "English",
-        href: "https://t.me/frenchkissfinance",
-      },
-      {
-        label: "Bahasa Indonesia",
-        href: "https://t.me/FrenchKissFinanceIndonesia",
-      },
-      {
-        label: "中文",
-        href: "https://t.me/FrenchKissFinance_CN",
-      },
-      {
-        label: "Tiếng Việt",
-        href: "https://t.me/FrenchKissFinanceVN",
-      },
-      {
-        label: "Italiano",
-        href: "https://t.me/FrenchKissFinance_ITA",
-      },
-      {
-        label: "русский",
-        href: "https://t.me/FrenchKissFinance_RU",
-      },
-      {
-        label: "Türkiye",
-        href: "https://t.me/FrenchKissFinance_Turkiye",
-      },
-      {
-        label: "Português",
-        href: "https://t.me/FrenchKissFinance_Portuguese",
-      },
-      {
-        label: "Español",
-        href: "https://t.me/FrenchKissFinance_ES",
-      },
-      {
-        label: "日本語",
-        href: "https://t.me/FrenchKissFinance_JP",
-      },
-      {
-        label: "Français",
-        href: "https://t.me/FrenchKissFinance_FR",
+        href: "https://t.me/frenchkiss_fin",
       },
       {
         label: "Announcements",
         href: "https://t.me/FrenchKissFinanceAnn",
-      },
-      {
-        label: "Whale Alert",
-        href: "https://t.me/FrenchKissFinanceWhales",
-      },
+      }
     ],
   },
   {
     label: "Twitter",
     icon: "TwitterIcon",
-    href: "https://twitter.com/FrenchKissFinance",
+    href: "https://twitter.com/FrenchKiss_Fin",
   },
 ];
 

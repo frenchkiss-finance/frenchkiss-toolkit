@@ -23,7 +23,7 @@ const PriceLink = styled.a`
 
 const KissPrice: React.FC<Props> = ({ kissPriceUsd }) => {
   return kissPriceUsd ? (
-    <PriceLink href="https://info.frenchkiss.finance/token/0x0e09fabb73bd3ade0a17ecc321fd13a19e81ce82" target="_blank">
+    <PriceLink href="https://info.frenchkiss.finance/token/0x3b44b0cFe3a290906F3C6479df56457db9d7cd59" target="_blank">
       <FrenchKissRoundIcon width="24px" mr="8px" />
       <Text color="textSubtle" bold>{`$${kissPriceUsd.toFixed(3)}`}</Text>
     </PriceLink>
