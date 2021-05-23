@@ -103,12 +103,12 @@ export const socials = [
     icon: "TelegramIcon",
     items: [
       {
-        label: "English",
-        href: "https://t.me/frenchkiss_fin",
+        label: "Channel",
+        href: "https://t.me/Frenchkiss_Fin",
       },
       {
-        label: "Announcements",
-        href: "https://t.me/FrenchKissFinanceAnn",
+        label: "Community Group",
+        href: "https://t.me/joinchat/QAWhYdmB25U5YWE0",
       }
     ],
   },
