@@ -9,7 +9,6 @@ coverage
 # production
 dist
 storybook-static
-deploy-storybook.yml
 
 # misc
 .DS_Store
