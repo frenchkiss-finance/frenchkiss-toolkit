@@ -14,13 +14,6 @@ export const Default: React.FC = (args) => {
   return <Skeleton {...args} />;
 };
 
-export const Avatar = Default.bind({});
-Avatar.args = {
-  width: 40,
-  height: 40,
-  variant: "circle",
-};
-
 export const Animation = Default.bind({});
 Animation.args = {
   width: 100,

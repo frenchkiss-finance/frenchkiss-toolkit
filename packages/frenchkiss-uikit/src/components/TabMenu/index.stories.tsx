@@ -29,8 +29,6 @@ export const Default: React.FC = () => {
         <TabMenu activeIndex={index} onItemClick={handleClick}>
           <Tab>Total</Tab>
           <Tab>Kissers</Tab>
-          <Tab>Flippers</Tab>
-          <Tab>Storm</Tab>
         </TabMenu>
       </Row>
       <Row>

@@ -63,11 +63,11 @@ it("renders correctly", () => {
       color: white;
     }
 
-    .c1:hover:not(:disabled):not(.pancake-button--disabled):not(.pancake-button--disabled):not(:active) {
+    .c1:hover:not(:disabled):not(.frenchkiss-button--disabled):not(.frenchkiss-button--disabled):not(:active) {
       opacity: 0.65;
     }
 
-    .c1:active:not(:disabled):not(.pancake-button--disabled):not(.pancake-button--disabled) {
+    .c1:active:not(:disabled):not(.frenchkiss-button--disabled):not(.frenchkiss-button--disabled) {
       opacity: 0.85;
       -webkit-transform: translateY(1px);
       -ms-transform: translateY(1px);
@@ -76,7 +76,7 @@ it("renders correctly", () => {
     }
 
     .c1:disabled,
-    .c1.pancake-button--disabled {
+    .c1.frenchkiss-button--disabled {
       background-color: #E9EAEB;
       border-color: #E9EAEB;
       box-shadow: none;
@@ -120,11 +120,11 @@ it("renders correctly", () => {
       color: #1FC7D4;
     }
 
-    .c2:hover:not(:disabled):not(.pancake-button--disabled):not(.pancake-button--disabled):not(:active) {
+    .c2:hover:not(:disabled):not(.frenchkiss-button--disabled):not(.frenchkiss-button--disabled):not(:active) {
       opacity: 0.65;
     }
 
-    .c2:active:not(:disabled):not(.pancake-button--disabled):not(.pancake-button--disabled) {
+    .c2:active:not(:disabled):not(.frenchkiss-button--disabled):not(.frenchkiss-button--disabled) {
       opacity: 0.85;
       -webkit-transform: translateY(1px);
       -ms-transform: translateY(1px);
@@ -133,7 +133,7 @@ it("renders correctly", () => {
     }
 
     .c2:disabled,
-    .c2.pancake-button--disabled {
+    .c2.frenchkiss-button--disabled {
       background-color: #E9EAEB;
       border-color: #E9EAEB;
       box-shadow: none;

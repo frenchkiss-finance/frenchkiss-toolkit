@@ -1,4 +1,4 @@
-# 🥞 FrenchKiss UIkit
+# 💋 FrenchKiss UIkit
 
 [![Version](https://img.shields.io/npm/v/@frenchkiss-libs/uikit)](https://www.npmjs.com/package/@frenchkiss-libs/uikit) [![Size](https://img.shields.io/bundlephobia/min/@frenchkiss-libs/uikit)](https://www.npmjs.com/package/@frenchkiss-libs/uikit)
 

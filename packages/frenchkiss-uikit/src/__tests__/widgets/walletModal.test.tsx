@@ -254,11 +254,11 @@ it("renders ConnectModal correctly", () => {
       margin-bottom: 0;
     }
 
-    .c15:hover:not(:disabled):not(.pancake-button--disabled):not(.pancake-button--disabled):not(:active) {
+    .c15:hover:not(:disabled):not(.frenchkiss-button--disabled):not(.frenchkiss-button--disabled):not(:active) {
       opacity: 0.65;
     }
 
-    .c15:active:not(:disabled):not(.pancake-button--disabled):not(.pancake-button--disabled) {
+    .c15:active:not(:disabled):not(.frenchkiss-button--disabled):not(.frenchkiss-button--disabled) {
       opacity: 0.85;
       -webkit-transform: translateY(1px);
       -ms-transform: translateY(1px);
@@ -267,7 +267,7 @@ it("renders ConnectModal correctly", () => {
     }
 
     .c15:disabled,
-    .c15.pancake-button--disabled {
+    .c15.frenchkiss-button--disabled {
       background-color: #E9EAEB;
       border-color: #E9EAEB;
       box-shadow: none;
@@ -775,7 +775,7 @@ it("renders ConnectModal correctly", () => {
           <a
             class="c16 c17 c18"
             color="primary"
-            href="https://docs.pancakeswap.finance/guides/faq#how-do-i-set-up-my-wallet-on-binance-smart-chain"
+            href="https://docs.frenchkiss.finance/guides/faq#how-do-i-set-up-my-wallet-on-binance-smart-chain"
             rel="noreferrer noopener"
             target="_blank"
           >

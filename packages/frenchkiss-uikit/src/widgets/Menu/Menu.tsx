@@ -8,7 +8,6 @@ import Logo from "./components/Logo";
 import Panel from "./components/Panel";
 import UserBlock from "./components/UserBlock";
 import { NavProps } from "./types";
-import Avatar from "./components/Avatar";
 import { MENU_HEIGHT, SIDEBAR_WIDTH_REDUCED, SIDEBAR_WIDTH_FULL } from "./config";
 
 const Wrapper = styled.div`
@@ -67,12 +66,9 @@ const Menu: React.FC<NavProps> = ({
   logout,
   isDark,
   toggleTheme,
-  langs,
-  setLang,
   currentLang,
   kissPriceUsd,
   links,
-  profile,
   children,
 }) => {
   const { isXl } = useMatchBreakpoints();
@@ -124,7 +120,6 @@ const Menu: React.FC<NavProps> = ({
         />
         <Flex>
           <UserBlock account={account} login={login} logout={logout} />
-          {profile && <Avatar profile={profile} />}
         </Flex>
       </StyledNav>
       <BodyWrapper>
@@ -134,8 +129,6 @@ const Menu: React.FC<NavProps> = ({
           showMenu={showMenu}
           isDark={isDark}
           toggleTheme={toggleTheme}
-          langs={langs}
-          setLang={setLang}
           currentLang={currentLang}
           kissPriceUsd={kissPriceUsd}
           pushNav={setIsPushed}

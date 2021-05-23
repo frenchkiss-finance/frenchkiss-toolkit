@@ -9,7 +9,7 @@ import ThemeSwitcher from "./ThemeSwitcher";
 import SocialLinks from "./SocialLinks";
 import LangSelector from "./LangSelector";
 
-interface Props extends PanelProps, PushedProps {}
+interface Props extends PanelProps, PushedProps { }
 
 const Container = styled.div`
   flex: none;
@@ -41,8 +41,6 @@ const PanelFooter: React.FC<Props> = ({
   isDark,
   kissPriceUsd,
   currentLang,
-  langs,
-  setLang,
 }) => {
   if (!isPushed) {
     return (
@@ -62,7 +60,7 @@ const PanelFooter: React.FC<Props> = ({
       </SocialEntry>
       <SettingsEntry>
         <ThemeSwitcher isDark={isDark} toggleTheme={toggleTheme} />
-        <LangSelector currentLang={currentLang} langs={langs} setLang={setLang} />
+        <LangSelector currentLang={currentLang} />
       </SettingsEntry>
     </Container>
   );

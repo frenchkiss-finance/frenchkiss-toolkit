@@ -28,36 +28,6 @@ it("renders correctly", () => {
   `);
 });
 
-it("renders correctly avatar", () => {
-  const { asFragment } = renderWithTheme(<Skeleton width={50} height={50} variant="circle" />);
-  expect(asFragment()).toMatchInlineSnapshot(`
-    <DocumentFragment>
-      .c0 {
-      min-height: 20px;
-      display: block;
-      background-color: #E9EAEB;
-      border-radius: 50%;
-      width: 50px;
-      height: 50px;
-    }
-
-    .c1 {
-      -webkit-animation: wAFEO 2s infinite ease-out;
-      animation: wAFEO 2s infinite ease-out;
-      -webkit-transform: translate3d(0,0,0);
-      -ms-transform: translate3d(0,0,0);
-      transform: translate3d(0,0,0);
-    }
-
-    <div
-        class="c0 c1"
-        height="50"
-        width="50"
-      />
-    </DocumentFragment>
-  `);
-});
-
 it("renders correctly waves animation", () => {
   const { asFragment } = renderWithTheme(<Skeleton width={50} height={50} animation="waves" />);
   expect(asFragment()).toMatchInlineSnapshot(`

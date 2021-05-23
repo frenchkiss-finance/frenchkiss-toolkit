@@ -9,5 +9,4 @@ export interface ProgressProps {
   variant?: Variant;
   primaryStep?: number;
   secondaryStep?: number;
-  showProgressBunny?: boolean;
 }

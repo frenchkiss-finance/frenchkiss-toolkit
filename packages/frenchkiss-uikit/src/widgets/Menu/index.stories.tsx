@@ -6,7 +6,6 @@ import Heading from "../../components/Heading/Heading";
 import Text from "../../components/Text/Text";
 import { MenuEntry } from "./components/MenuEntry";
 import Menu from "./Menu";
-import { LangType } from "./types";
 import { links } from "./config";
 
 export default {
@@ -15,38 +14,30 @@ export default {
   argTypes: {},
 };
 
-const langs: LangType[] = [...Array(20)].map((_, i) => ({ code: `en${i}`, language: `English${i}` }));
-
 // This hook is used to simulate a props change, and force a re rendering
 const useProps = () => {
   const [props, setProps] = useState({
-    account: "0xbdda50183d817c3289f895a4472eb475967dc980",
+    account: "0x138856029495292313dCdc43326497cD73D0d3a3",
     login: noop,
     logout: noop,
     isDark: false,
     toggleTheme: noop,
-    langs,
-    setLang: noop,
     currentLang: "EN",
     kissPriceUsd: 0.023158668932877668,
     links,
-    profile: null,
   });
 
   useEffect(() => {
     const interval = setInterval(() => {
       setProps({
-        account: "0xbdda50183d817c3289f895a4472eb475967dc980",
+        account: "0x138856029495292313dCdc43326497cD73D0d3a3",
         login: noop,
         logout: noop,
         isDark: false,
         toggleTheme: noop,
-        langs,
-        setLang: noop,
         currentLang: "EN",
         kissPriceUsd: 0.023158668932877668,
         links,
-        profile: null,
       });
     }, 2000);
     return () => {
@@ -94,8 +85,6 @@ export const NotConnected: React.FC = () => {
         logout={noop}
         isDark
         toggleTheme={noop}
-        langs={langs}
-        setLang={noop}
         currentLang="EN"
         links={links}
       >
@@ -116,92 +105,6 @@ export const NotConnected: React.FC = () => {
   );
 };
 
-export const WithNoProfile: React.FC = () => {
-  return (
-    <BrowserRouter>
-      <Menu
-        account="0xbdda50183d817c3289f895a4472eb475967dc980"
-        login={noop}
-        logout={noop}
-        isDark={false}
-        toggleTheme={noop}
-        langs={langs}
-        setLang={noop}
-        currentLang="EN"
-        kissPriceUsd={0.23158668932877668}
-        links={links}
-        profile={{
-          profileLink: "/profile",
-          noProfileLink: "/no-profile",
-        }}
-      >
-        <div>
-          <Heading as="h1" mb="8px">
-            Page body
-          </Heading>
-          <Text as="p">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-            ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-            nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
-            anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
-            esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
-            qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-            exercitation ullamco laboris nisi ut
-          </Text>
-        </div>
-      </Menu>
-    </BrowserRouter>
-  );
-};
-
-export const WithProfile: React.FC = () => {
-  return (
-    <BrowserRouter>
-      <Menu
-        account="0xbdda50183d817c3289f895a4472eb475967dc980"
-        login={noop}
-        logout={noop}
-        isDark={false}
-        toggleTheme={noop}
-        langs={langs}
-        setLang={noop}
-        currentLang="EN"
-        kissPriceUsd={0.23158668932877668}
-        links={links}
-        profile={{
-          username: "frenchkiss",
-          image: "https://frenchkiss.finance/images/nfts/blueberries-preview.png",
-          profileLink: "/profile",
-          noProfileLink: "/no-profile",
-        }}
-      >
-        <div>
-          <Heading as="h1" mb="8px">
-            Page body
-          </Heading>
-          <Text as="p">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-            ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-            nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
-            anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
-            esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
-            qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-            exercitation ullamco laboris nisi ut
-          </Text>
-        </div>
-      </Menu>
-    </BrowserRouter>
-  );
-};
-
 export const MenuEntryComponent: React.FC = () => {
   return (
     <Flex justifyContent="space-between" p="16px" style={{ backgroundColor: "wheat" }}>
@@ -214,28 +117,20 @@ export const MenuEntryComponent: React.FC = () => {
 
 export const WithSubmenuSelected: React.FC = () => {
   return (
-    <MemoryRouter initialEntries={["/teams"]}>
+    <MemoryRouter initialEntries={["https://exchange.frenchkiss.finance"]}>
       <Menu
-        account="0xbdda50183d817c3289f895a4472eb475967dc980"
+        account="0x138856029495292313dCdc43326497cD73D0d3a3"
         login={noop}
         logout={noop}
         isDark={false}
         toggleTheme={noop}
-        langs={langs}
-        setLang={noop}
         currentLang="EN"
         kissPriceUsd={0.23158668932877668}
         links={links}
-        profile={{
-          username: "frenchkiss",
-          image: "https://frenchkiss.finance/images/nfts/blueberries-preview.png",
-          profileLink: "/profile",
-          noProfileLink: "/no-profile",
-        }}
       >
         <div>
           <Heading as="h1" mb="8px">
-            Submenu leaderboard selected
+            Submenu exchange selected
           </Heading>
         </div>
       </Menu>
