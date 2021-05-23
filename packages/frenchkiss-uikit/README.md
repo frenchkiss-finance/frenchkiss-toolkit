@@ -1,6 +1,9 @@
 # 💋 FrenchKiss UIkit
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/bba37e64-b1b6-4836-83c4-8ae9eb2ad780/deploy-status)](https://app.netlify.com/sites/frenchkiss-uikit/deploys)
+
 [![Version](https://img.shields.io/npm/v/@frenchkiss-libs/uikit)](https://www.npmjs.com/package/@frenchkiss-libs/uikit) [![Size](https://img.shields.io/bundlephobia/min/@frenchkiss-libs/uikit)](https://www.npmjs.com/package/@frenchkiss-libs/uikit)
+
 
 FrenchKiss UIkit is a set of React components and hooks used to build pages on FrenchKiss's apps. It also contains a theme file for dark and light mode.
 
@@ -37,4 +40,4 @@ This project is built with Typescript and export all the relevant types.
 
 ## How to use the UIkit
 
-If you want to use components from the UIkit, check the [Storybook documentation](https://frenchkiss-finance.github.io/frenchkiss-uikit/)
+If you want to use components from the UIkit, check the [Storybook documentation](https://frenchkiss-uikit.netlify.app/)
