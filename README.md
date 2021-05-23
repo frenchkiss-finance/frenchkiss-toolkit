@@ -1,5 +1,7 @@
 # FrenchKiss Toolkit
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/bba37e64-b1b6-4836-83c4-8ae9eb2ad780/deploy-status)](https://app.netlify.com/sites/frenchkiss-uikit/deploys)
+
 This repository is a monorepo manage with [yarn workspaces](https://classic.yarnpkg.com/en/docs/workspaces/) and [Lerna](https://lerna.js.org/). 
 
 ## Packages
